@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="110dp"
+    android:paddingTop="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="20dp"
+    android:layout_width="350dp"
+    app:cardBackgroundColor="#009688"
+    app:cardElevation="2dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_height="100dp">
+<TextView
+    android:layout_width="200dp"
+    android:text="Bài 1"
+    android:textSize="20dp"
+    android:id="@+id/title_1_d"
+    android:textColor="@color/white"
+    android:fontFamily="sans-serif"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:layout_marginTop="33dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="50dp">
+
+</TextView>
+    <TextView
+        android:layout_width="100dp"
+        android:text="Xem thêm"
+        android:id="@+id/xemthem"
+        android:background="@drawable/border_3"
+        android:textColor="#009688"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="100dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_height="23dp">
+
+    </TextView>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

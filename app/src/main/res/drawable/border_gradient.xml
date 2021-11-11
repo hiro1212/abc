@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="2dp"
+        android:color="@color/white">
+
+    </stroke>
+    <gradient
+        android:angle="135"
+        android:type="linear"
+        android:centerColor="#23AA9D"
+        android:endColor="#11988C"
+        android:startColor="#00BCD4"
+        >
+
+    </gradient>
+
+
+    <!-- các thuộc tính căn chỉnh-->
+    <!--    <padding-->
+    <!--        android:left="10dp"-->
+    <!--        android:top="10dp"-->
+    <!--        android:right="10dp"-->
+    <!--        android:bottom="10dp" >-->
+    <!--    </padding>-->
+
+    <!-- và đây là bán kính đường tròn ở 4 góc -->
+    <corners
+        android:radius="10dp" >
+    </corners>
+
+</shape>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0d2639"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskFirebase">
+
+    <LinearLayout
+
+        android:layout_marginBottom="20dp"
+        android:id="@+id/layout_s1"
+        android:background="@drawable/border_setting"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/backpage"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_gravity="left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgavatar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/user">
+            </ImageView>
+            <ImageView
+                android:id="@+id/imgchup"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="110dp"
+
+                android:src="@drawable/ic_baseline_add_a_photo_24">
+            </ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="casual"
+                    android:text="Title :"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Content :"
+                    android:textSize="20dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time :"
+                    android:textSize="20dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_time"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calo :"
+                    android:textSize="20dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/et_calo"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="ADD"
+                    android:textSize="20dp"
+                    android:id="@+id/additem"
+                    android:gravity="center"
+                    android:background="@drawable/border"
+                    android:layout_height="40dp">
+                </TextView>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="115dp"
+                    android:text="EDIT"
+                    android:textSize="20dp"
+                    android:id="@+id/edititem"
+                    android:gravity="center"
+                    android:background="@drawable/border"
+                    android:layout_height="40dp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewFB"
+        android:layout_below="@+id/layout_s1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

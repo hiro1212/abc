@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0d2639"
+    android:layout_height="match_parent"
+    tools:context=".LoadPageActivity">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/logoandtitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/tab_bar"
+            android:layout_width="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_3"
+            android:layout_height="200dp">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_1"
+                android:textColor="@color/white"
+                android:textSize="75dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:text="FMFE"
+                android:layout_height="100dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/text_2"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:text="5 minutes for exercise"
+                android:layout_height="100dp">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+<ImageView
+    android:layout_marginTop="317dp"
+    android:id="@+id/imgwl"
+    android:src="@drawable/wl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ImageView>
+</RelativeLayout>

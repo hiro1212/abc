@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d2639"
+    android:orientation="vertical"
+    tools:context=".CaseActivity">
+    <LinearLayout
+        android:background="#009688"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Bảng Thống Kê"
+            android:gravity="center"
+            android:layout_height="40dp">
+
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Số Calo đã tiêu thụ :"
+        android:layout_height="40dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="100 Calo"
+        android:textColor="@color/white"
+        android:textSize="70dp"
+        android:gravity="center"
+        android:layout_height="150dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Số Kilogram đã tiêu thụ :"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="2 KG"
+        android:textColor="@color/white"
+        android:textSize="70dp"
+        android:gravity="center"
+        android:layout_height="150dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Số thời gian tập luyện :"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="10:00"
+        android:textColor="@color/white"
+        android:textSize="70dp"
+        android:gravity="center"
+        android:layout_height="150dp">
+
+    </TextView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconSize="20dp"
+        android:background="#009688"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
